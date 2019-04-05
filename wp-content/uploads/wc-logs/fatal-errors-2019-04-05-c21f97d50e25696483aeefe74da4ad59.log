@@ -1,0 +1,24 @@
+2019-04-05T10:21:21+00:00 CRITICAL Uncaught Exception: Invalid product. in /var/www/html/kinkytee/wp-content/plugins/woocommerce/includes/data-stores/class-wc-product-data-store-cpt.php:152
+Stack trace:
+#0 /var/www/html/kinkytee/wp-content/plugins/woocommerce/includes/class-wc-data-store.php(159): WC_Product_Data_Store_CPT->read(Object(WC_Product))
+#1 /var/www/html/kinkytee/wp-content/plugins/woocommerce/includes/abstracts/abstract-wc-product.php(134): WC_Data_Store->read(Object(WC_Product))
+#2 /var/www/html/kinkytee/wp-content/plugins/js_composer/include/classes/vendors/plugins/woocommerce/grid-item-attributes.php(25): WC_Product->__construct(Object(WP_Post))
+#3 /var/www/html/kinkytee/wp-includes/class-wp-hook.php(286): vc_gitem_template_attribute_woocommerce_product('', 'price')
+#4 /var/www/html/kinkytee/wp-includes/plugin.php(208): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/kinkytee/wp-content/plugins/js_composer/include/params/vc_grid_item/class-vc-grid-item.php(357): apply_filters('vc_gitem_templa...', '', Array)
+#6 /var/www/html/ in /var/www/html/kinkytee/wp-content/plugins/woocommerce/includes/data-stores/class-wc-product-data-store-cpt.php on line 152
+
+2019-04-05T10:21:23+00:00 CRITICAL Uncaught Exception: Invalid product. in /var/www/html/kinkytee/wp-content/plugins/woocommerce/includes/data-stores/class-wc-product-data-store-cpt.php:152
+Stack trace:
+#0 /var/www/html/kinkytee/wp-content/plugins/woocommerce/includes/class-wc-data-store.php(159): WC_Product_Data_Store_CPT->read(Object(WC_Product))
+#1 /var/www/html/kinkytee/wp-content/plugins/woocommerce/includes/abstracts/abstract-wc-product.php(134): WC_Data_Store->read(Object(WC_Product))
+#2 /var/www/html/kinkytee/wp-content/plugins/js_composer/include/classes/vendors/plugins/woocommerce/grid-item-attributes.php(25): WC_Product->__construct(Object(WP_Post))
+#3 /var/www/html/kinkytee/wp-includes/class-wp-hook.php(286): vc_gitem_template_attribute_woocommerce_product('', 'price')
+#4 /var/www/html/kinkytee/wp-includes/plugin.php(208): WP_Hook->apply_filters('', Array)
+#5 /var/www/html/kinkytee/wp-content/plugins/js_composer/include/params/vc_grid_item/class-vc-grid-item.php(357): apply_filters('vc_gitem_templa...', '', Array)
+#6 /var/www/html/ in /var/www/html/kinkytee/wp-content/plugins/woocommerce/includes/data-stores/class-wc-product-data-store-cpt.php on line 152
+
+2019-04-05T18:03:53+00:00 CRITICAL syntax error, unexpected '<', expecting end of file in /var/www/html/kinkytee/wp-content/themes/martfury/woocommerce/content-product.php on line 49
+
+2019-04-05T18:04:00+00:00 CRITICAL syntax error, unexpected '<', expecting end of file in /var/www/html/kinkytee/wp-content/themes/martfury/woocommerce/content-product.php on line 49
+

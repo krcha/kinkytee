@@ -1,0 +1,24 @@
+/*
+Theme Name: Martfury
+Description: Used to style Gutenberg Blocks in the editor.
+*/
+
+.editor-styles-wrapper.edit-post-visual-editor p.wp-block-subhead {
+	font-size: 1.1em;
+	font-style: italic;
+	opacity: .75;
+	color: #666;
+}
+
+/* List styles */
+
+.edit-post-visual-editor ul:not(.wp-block-gallery),
+.editor-block-list__block ul:not(.wp-block-gallery),
+.block-library-list ul,
+.edit-post-visual-editor ol,
+.editor-block-list__block ol,
+.block-library-list ol,
+.block-library-list .editor-rich-text__tinymce {
+	margin: 0 0 1.5em 1.5em;
+	padding: 0;
+}

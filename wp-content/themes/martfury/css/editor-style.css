@@ -1,0 +1,398 @@
+/*
+Theme Name: Martfury
+Description: Used to style the TinyMCE editor.
+*/
+
+/**
+ * Table of Contents:
+ *
+ * 1.0 - Body
+ * 2.0 - Typography
+ * 3.0 - Elements
+ * 4.0 - Alignment
+ * 5.0 - Galleries
+ */
+
+/**
+ * 1.0 - Body
+ */
+
+body {
+    color: #666;
+    font-size: 14px;
+    font-family: 'Work Sans', Arial, sans-serif;
+    line-height: 1.6;
+    background: #fff;
+    word-wrap: break-word;
+}
+
+/**
+ * 2.0 - Typography
+ */
+
+a {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fcb800;
+}
+
+a img {
+    border: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    font-family: 'Work Sans', Arial, sans-serif;
+    line-height: 1.2;
+    color: #000;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h5 {
+    font-size: 14px;
+}
+
+h6 {
+    font-size: 12px;
+}
+
+ul {
+    list-style-type: square;
+}
+
+li {
+    margin-bottom: 7px;
+}
+
+p {
+    margin-bottom: 1.7em;
+    margin-top: 0;
+    font-size: 14px;
+}
+
+.has-normal-font-size, .has-regular-font-size {
+    font-size: 16px;
+}
+
+.has-large-font-size {
+    font-size: 36px;
+}
+
+/**
+ * 3.0 - Elements
+ */
+
+hr {
+    background-color: #bbb;
+    border: 0;
+    height: 1px;
+    margin-bottom: 1.5em;
+}
+
+input[type=text],
+textarea {
+    border: 1px solid #999;
+    background: #fff;
+}
+
+blockquote {
+    border-left: 4px solid #fcb800;
+    padding: 0 40px 0 60px;
+    margin: 0 0 10px;
+    color: #000;
+    font-size: 20px;
+    font-family: 'Libre Baskerville', "Times New Roman", Times, serif;
+}
+
+blockquote p {
+    font-size: 20px;
+}
+
+blockquote cite {
+    display: block;
+    font-style: normal;
+    color: #000;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'Work Sans', Arial, sans-serif;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.wp-block-quote__citation {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'Work Sans', Arial, sans-serif;
+    font-weight: 600;
+    color: #000;
+}
+
+blockquote .wp-block-quote__citation:before,
+blockquote .wp-block-pullquote__citation:before {
+    content: url(data:image/svg+xml;base64,PCEtLSBHZW5lcmF0ZWQgYnkgSWNvTW9vbi5pbyAtLT4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwIiB2aWV3Qm94PSIwIDAgMTAyNCAxMDI0Ij4KPHRpdGxlPnppcHBlZDwvdGl0bGU+CjxnIGlkPSJpY29tb29uLWlnbm9yZSI+CjwvZz4KPHBhdGggZmlsbD0iIzk5OSIgZD0iTTIzMC41MTMgNDA5LjVjLTQ3LjMyNCAwLTkxLjM1OSAxNC4zNDMtMTI3Ljk5OCAzOC44OTkgNjYuNDU4LTExNS4wMTEgMTkwLjc4OS0xOTIuNTc0IDMzMi44OTktMTkyLjU3NCAxNC4xNDUgMCAyNS42MTMtMTEuNDY4IDI1LjYxMy0yNS42MTNzLTExLjQ2OC0yNS42MTMtMjUuNjEzLTI1LjYxM2MtMTE2LjMwMyAwLTIyNS42NDQgNDUuMjkxLTMwNy44ODMgMTI3LjUyOXMtMTI3LjUyOSAxOTEuNTgyLTEyNy41MjkgMzA3Ljg4M2MwIDEyNy4xMDUgMTAzLjQwNyAyMzAuNTEzIDIzMC41MTMgMjMwLjUxM3MyMzAuNTEzLTEwMy40MDcgMjMwLjUxMy0yMzAuNTEzLTEwMy40MDctMjMwLjUxMy0yMzAuNTEzLTIzMC41MTN6TTIzMC41MTMgODE5LjNjLTk4Ljg1OSAwLTE3OS4yODgtODAuNDI4LTE3OS4yODgtMTc5LjI4OCAwLTEuNTQ3IDAuMDQwLTMuMDgyIDAuMDU5LTQuNjIzIDIuNDYtOTYuNzMgODEuOTE0LTE3NC42NjQgMTc5LjIyOS0xNzQuNjY0IDk4Ljg1OSAwIDE3OS4yODggODAuNDI4IDE3OS4yODggMTc5LjI4OHMtODAuNDI4IDE3OS4yODgtMTc5LjI4OCAxNzkuMjg4ek03OTMuOTg4IDQwOS41Yy00Ny4zMjQgMC05MS4zNTkgMTQuMzQzLTEyNy45OTggMzguODk5IDY2LjQ1OC0xMTUuMDEzIDE5MC43ODktMTkyLjU3NCAzMzIuODk5LTE5Mi41NzQgMTQuMTQ2IDAgMjUuNjEzLTExLjQ2OCAyNS42MTMtMjUuNjEzcy0xMS40NjctMjUuNjEzLTI1LjYxMy0yNS42MTNjLTExNi4zMDIgMC0yMjUuNjQ0IDQ1LjI5MS0zMDcuODgzIDEyNy41MjlzLTEyNy41MjkgMTkxLjU4Mi0xMjcuNTI5IDMwNy44ODNjMCAxMjcuMTA1IDEwMy40MDcgMjMwLjUxMyAyMzAuNTEzIDIzMC41MTNzMjMwLjUxMy0xMDMuNDA3IDIzMC41MTMtMjMwLjUxMy0xMDMuNDA3LTIzMC41MTMtMjMwLjUxMy0yMzAuNTEzek03OTMuOTg4IDgxOS4zYy05OC44NTkgMC0xNzkuMjg4LTgwLjQyOC0xNzkuMjg4LTE3OS4yODggMC0xLjU0NyAwLjA0MC0zLjA4MiAwLjA1OS00LjYyMyAyLjQ2LTk2LjczIDgxLjkxNS0xNzQuNjY0IDE3OS4yMjktMTc0LjY2NCA5OC44NTkgMCAxNzkuMjg4IDgwLjQyOCAxNzkuMjg4IDE3OS4yODhzLTgwLjQyOCAxNzkuMjg4LTE3OS4yODggMTc5LjI4OHoiPjwvcGF0aD4KPC9zdmc+Cg==);
+    display: inline-block;
+    font-size: 16px;
+    padding-right: 15px;
+
+}
+
+.wp-block-quote.is-large .wp-block-quote__citation,
+.wp-block-quote.is-style-large .wp-block-quote__citation {
+    text-align: right;
+}
+
+.wp-block-pullquote cite,
+.wp-block-pullquote footer,
+.wp-block-pullquote__citation {
+    color: #000;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-style: normal;
+    font-family: 'Work Sans', Arial, sans-serif;
+    font-weight: 600;
+}
+
+.wp-block-quote.is-large cite, .wp-block-quote.is-large .wp-block-quote__citation,
+.wp-block-quote.is-style-large cite, .wp-block-quote.is-style-large .wp-block-quote__citation{
+    font-size: 18px;
+    text-align: right;
+}
+
+.wp-block-pullquote .wp-block-pullquote__citation {
+    font-size: 18px;
+}
+
+.wp-block-code {
+    font-family: 'Work Sans', Arial, sans-serif;
+    font-size: 14px;
+    color: #23282d;
+    padding: .8em 1em;
+    border: 1px solid #e2e4e7;
+    border-radius: 4px;
+    background-color: #f5f5f5;
+}
+
+.wp-block-code .editor-plain-text {
+    background-color: #f5f5f5 !important;
+}
+
+pre {
+    background: #f5f5f5;
+    color: #666;
+    font-family: monospace;
+    font-size: 14px;
+    margin: 20px 0;
+    overflow: auto;
+    padding: 20px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    border: 1px solid #e2e4e7;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-width: 1px 0 0 1px;
+}
+
+caption,
+td,
+th {
+    padding: 0;
+    font-weight: normal;
+    text-align: left;
+}
+
+table,
+th,
+td {
+    border: 1px solid currentColor;
+}
+
+th {
+    border-width: 0 1px 1px 0;
+    font-weight: 700;
+}
+
+td {
+    border-width: 0 1px 1px 0;
+}
+
+th,
+td {
+    padding: 0.4375em;
+}
+
+dl {
+    margin: 0 0 1.75em;
+}
+
+dt {
+    font-weight: 700;
+}
+
+dd {
+    margin: 0 0 1.75em;
+}
+
+.wp-block-button__link {
+    padding: 0 25px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.is-style-outline .wp-block-button__link {
+    border-width: 1px;
+    background: 0 0;
+}
+
+ul.wp-block-categories, .wp-block-categories ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.wp-block-categories li a {
+    color: #000;
+}
+
+.wp-block-categories li a:hover {
+    color: #fcb800;
+}
+
+ul.wp-block-latest-posts, .wp-block-latest-posts ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.wp-block-latest-posts li a {
+    color: #000;
+}
+
+.wp-block-latest-posts li a:hover {
+    color: #fcb800;
+}
+
+.wp-block-categories select {
+    padding: 10px;
+    border: 1px solid #d9d9d9;
+    color: #000;
+    line-height: 1;
+    height: auto;
+    border-radius: 0;
+    font-family: inherit;
+
+}
+
+/**
+ * 4.0 - Alignment
+ */
+
+img {
+    height: auto; /* Make sure images are scaled correctly. */
+    width: inherit; /* Make images fill their parent's space. Solves IE8. */
+    max-width: 100%; /* Adhere to container width. */
+}
+
+embed,
+iframe,
+object {
+    margin-bottom: 1.5em;
+    max-width: 100%;
+}
+
+/**
+ * 5.0 - Galleries
+ */
+
+.gallery {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.gallery-item {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    width: 100%;
+    margin: 30px 0 0 0;
+    padding: 0 15px;
+}
+
+.gallery-columns-2 .gallery-item {
+    max-width: 50%;
+}
+
+.gallery-columns-3 .gallery-item {
+    max-width: 33.33%;
+}
+
+.gallery-columns-4 .gallery-item {
+    max-width: 25%;
+}
+
+.gallery-columns-5 .gallery-item {
+    max-width: 20%;
+}
+
+.gallery-columns-6 .gallery-item {
+    max-width: 16.66%;
+}
+
+.gallery-columns-7 .gallery-item {
+    max-width: 14.28%;
+}
+
+.gallery-columns-8 .gallery-item {
+    max-width: 12.5%;
+}
+
+.gallery-columns-9 .gallery-item {
+    max-width: 11.11%;
+}
+
+.gallery-columns-10 .gallery-item {
+    max-width: 10%;
+}
+
+.gallery-caption {
+    display: block;
+}

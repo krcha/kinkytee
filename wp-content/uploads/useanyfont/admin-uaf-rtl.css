@@ -1,0 +1,10 @@
+			@font-face {
+				font-family: 'brandon_bld';
+				font-style: normal;
+				src: url('/kinkytee/wp-content/uploads/useanyfont/190405020623Brandon_bld.eot');
+				src: local('brandon_bld'), url('/kinkytee/wp-content/uploads/useanyfont/190405020623Brandon_bld.eot') format('embedded-opentype'), url('/kinkytee/wp-content/uploads/useanyfont/190405020623Brandon_bld.woff') format('woff');
+			}
+            
+            .et_gf_brandon_bld{background:none !important;font-family:brandon_bld;text-indent:0 !important;font-size:25px;}
+            
+		
